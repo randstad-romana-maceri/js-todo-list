@@ -1,0 +1,62 @@
+/*-----------------
+    RESET
+------------------*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*-----------------
+    GENERAL
+------------------*/
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background-color: #eeeeee;
+  width: 500px;
+  margin: auto;
+
+  border-radius: 10px;
+}
+
+.btn {
+  padding: 4px 18px;
+  background-color: lightseagreen;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+input {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/*-----------------
+    APP
+------------------*/
+.app-header {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid #fff;
+}
+
+.app-header form {
+  margin-top: 14px;
+}
+
+.app-body {
+  padding: 10px;
+}
+
+.app-body ul {
+  padding-left: 40px;
+}
+
+.app-body ul li {
+  margin-top: 10px;
+}
