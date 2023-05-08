@@ -3,16 +3,17 @@
 -------------------*/
 const lists = ["Fare la spesa", "Preparare il pranzo", "Portare fuori il cane"];
 const form = document.querySelector("#form-todo");
-
+const listTodoElement = document.querySelector("#list-todo");
+const inputElement = document.querySelector("#new-todo-field");
 /*------------------
     FUNCTIONS
 -------------------*/
 function renderList() {
-  document.querySelector("#list-todo").innerHTML = "";
+  listTodoElement.innerHTML = "";
   lists.forEach(function (elm) {
     const listItem = document.createElement("li");
     listItem.textContent = elm;
-    document.querySelector("#list-todo").append(listItem);
+    listTodoElement.append(listItem);
   });
 }
 /*------------------
@@ -25,8 +26,6 @@ renderList();
 -------------------*/
 form.addEventListener("submit", function (event) {
   event.preventDefault();
-  // Leggo il valore del campo input
-  const inputElement = document.querySelector("#new-todo-field");
   // Aggiungo un listItem alla lista
   lists.push(inputElement.value);
   renderList();
