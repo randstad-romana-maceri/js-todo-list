@@ -60,6 +60,8 @@ input {
 .app-body ul li {
   margin-top: 10px;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
 }
 
 .done {
